@@ -62,9 +62,9 @@ public class EventHandler
         Log.Info("SigmaWarhead launched.");
         Cassie.Clear();
         Cassie.Message(LaunchMessage, false, true, true);
-        Timing.CallDelayed(12, () => {
+        Timing.CallDelayed(15, () => {
             Warhead.Controller.StartDetonation(false, true);
-            Warhead.Controller.ForceTime(80);
+            Warhead.Controller.ForceTime(105);
             Warhead.IsLocked = true;
         });
         StopSigma();
